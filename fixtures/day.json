@@ -1,0 +1,87 @@
+{
+  "date": "Tue 8 Sep 2026",
+  "operator": "Avery Chen",
+  "agency": "Northline Studio",
+  "events": [
+    {
+      "id": "evt-001",
+      "ts": "2026-09-08T08:12:00-07:00",
+      "source": "n8n",
+      "type": "workflow_failure",
+      "severity": "medium",
+      "title": "Lead Capture webhook timed out",
+      "payload": {
+        "workflow": "Lead Capture",
+        "workflow_id": "wf_lead_capture",
+        "error": "ETIMEDOUT",
+        "node": "Webhook",
+        "retries_already": 1,
+        "side_effects": "none"
+      }
+    },
+    {
+      "id": "evt-002",
+      "ts": "2026-09-08T09:04:00-07:00",
+      "source": "intake",
+      "type": "new_lead",
+      "severity": "low",
+      "title": "New lead: Maya Chen — brochure site",
+      "payload": {
+        "name": "Maya Chen",
+        "email": "maya@example.com",
+        "source": "website",
+        "intent": "5-page brochure site",
+        "budget_hint": "$2–4k",
+        "message": "Need a simple site for my bakery by October.",
+        "stakes": "standard_inquiry"
+      }
+    },
+    {
+      "id": "evt-003",
+      "ts": "2026-09-08T10:41:00-07:00",
+      "source": "gumroad",
+      "type": "sku_issue",
+      "severity": "low",
+      "title": "Low stock: Async Ops Playbook",
+      "payload": {
+        "sku": "async-ops-playbook",
+        "product": "Async Ops Playbook (PDF)",
+        "units": 3,
+        "threshold": 5,
+        "action_hint": "reorder_reminder"
+      }
+    },
+    {
+      "id": "evt-004",
+      "ts": "2026-09-08T13:18:00-07:00",
+      "source": "n8n",
+      "type": "workflow_failure",
+      "severity": "high",
+      "title": "Stripe checkout webhook 401",
+      "payload": {
+        "workflow": "Stripe Checkout Fulfillment",
+        "workflow_id": "wf_stripe_fulfill",
+        "error": "401 Unauthorized",
+        "node": "Stripe Trigger",
+        "retries_already": 0,
+        "side_effects": "may_duplicate_fulfillment_or_charge"
+      }
+    },
+    {
+      "id": "evt-005",
+      "ts": "2026-09-08T16:02:00-07:00",
+      "source": "gumroad",
+      "type": "sku_issue",
+      "severity": "high",
+      "title": "SKU sold out: 1:1 Audit Slot",
+      "payload": {
+        "sku": "audit-slot-sept",
+        "product": "September 1:1 Audit Slot",
+        "units": 0,
+        "threshold": 1,
+        "action_hint": "unpublish",
+        "open_orders": 2
+      }
+    }
+  ]
+}

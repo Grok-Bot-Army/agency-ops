@@ -1,0 +1,2 @@
+id,ts,source,sku,product,units,threshold,action_hint,title,note
+evt-006,2026-09-08T11:15:00-07:00,gumroad,brand-kit,Client Brand Kit,8,10,reorder_reminder,Low stock: Client Brand Kit,Approaching reorder; still sellable
