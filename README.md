@@ -1,6 +1,6 @@
 # Agency Ops
 
-A background [Strands](https://strandsagents.com/docs/user-guide/quickstart/python/) agent for solo operators and tiny digital agencies. It eats repetitive ops busywork — failed n8n runs, inbound leads, SKU stock — and **only taps you when a decision could charge a card, email a customer, or take a listing down.**
+A background [Strands](https://strandsagents.com/docs/user-guide/quickstart/python/) agent for solo operators and tiny digital agencies. It eats repetitive ops busywork (failed n8n runs, inbound leads, SKU stock) and **only taps you when a decision could charge a card, email a customer, or take a listing down.**
 
 Built for the **AWS Agents for Humans** hackathon, Professional / Work Amplifier track.
 
@@ -8,7 +8,7 @@ Built for the **AWS Agents for Humans** hackathon, Professional / Work Amplifier
 
 ## Who it's for
 
-Avery runs Northline Studio alone. n8n moves leads. Gumroad sells a playbook and a few audit slots. Most mornings start the same way: a red workflow, a form submission, a “3 copies left” ping — an hour of triage before any billable work.
+Avery runs Northline Studio alone. n8n moves leads. Gumroad sells a playbook and a few audit slots. Most mornings start the same way: a red workflow, a form submission, a “3 copies left” ping, then an hour of triage before any billable work.
 
 Avery does not want another chatbot. Avery wants a quiet desk that:
 
@@ -64,7 +64,7 @@ python3 -m pytest -q
 
 Default model provider is Amazon Bedrock, matching the [Strands Python quickstart](https://strandsagents.com/docs/user-guide/quickstart/python/).
 
-1. Copy `.env.example` and export credentials — `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` / `AWS_REGION`, or `AWS_BEARER_TOKEN_BEDROCK`, or an instance role.
+1. Copy `.env.example` and export credentials: `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` / `AWS_REGION`, or `AWS_BEARER_TOKEN_BEDROCK`, or an instance role.
 2. Enable the model in Bedrock (default `AGENCY_OPS_MODEL=global.anthropic.claude-sonnet-4-6`).
 3. Run:
 
